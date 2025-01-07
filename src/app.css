@@ -131,7 +131,7 @@ button:hover{
     text-align: justify;
     padding: 10px;
     gap: 10px;
-    height: 70vh;
+    height: auto;
     width: 100%;
     box-shadow: 2px 4px 14px 0px rgba(0, 0, 0, 0.75);
 }
@@ -350,12 +350,18 @@ button:hover{
     }
 
     /* SOBRE MI*/
+
     .about-me-container{
         font-size: 130%;
-        gap: 50px;
+        gap: 35px;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
         margin-bottom: 45px;
     }
-
+    .about-me-container p{
+        text-align: start;
+    }
     /* PROYECTOS */
     .projects{
         display: flex;
