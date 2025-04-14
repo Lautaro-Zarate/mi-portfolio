@@ -5,9 +5,11 @@ const Projects = () => {
     const linkProject2 = "https://lautaro-zarate.github.io/True-shop/"
     const linkProject2Git = "https://github.com/Lautaro-Zarate/True-shop"
 
-    const linkProject3 = "https://lautaro-zarate.github.io/Simulador-noticias/"
-    const linkProject3Git = "https://github.com/Lautaro-Zarate/Simulador-noticias"
+    const linkProject3 = "https://rafasanzfotografo.com/"
+    // const linkProject3Git = "https://github.com/Lautaro-Zarate/Simulador-noticias"
     
+    const linkProject4 = "https://certezayderecho.cl/";
+    const linkProject14Git = "https://github.com/Lautaro-Zarate/Certeza-Derecho-Estudio"
     return (
         <div className="projects" id="projects">
         <h2 className="project-title">Mis proyectos</h2>
@@ -24,6 +26,18 @@ const Projects = () => {
             </div>
         </div>
         <div className="project-container">
+            <img src="/project4.png" alt="proyecto1" className="project__image"/>
+            <div className="project__container-secondary">
+                <img src="/brand-project4.svg" alt="Logo de proyecto 1" className="project__brand"/>
+                <p className="project__description"><b>Landing Page para Estudio de Abogados: </b>
+                Desarrollé una landing Page para estudio de abogados de Chile. Para el desarrollo de estas landing pages utilicé HTML y CSS para estructurar y estilizar el contenido, junto con JavaScript para agregar interactividad. Además, implementé Tailwind CSS como framework de estilos para optimizar el diseño responsivo y acelerar el desarrollo con clases utilitarias. Esta Landing refleja mi capacidad para trabajar con tecnologías modernas y crear aplicaciones web robustas y centradas en el usuario.</p>
+                <div className="project__buttons-container">
+                    <button className="btn-primary" onClick={() => window.open(linkProject4 , "_blank")}>Ver proyecto</button>
+                    <button className="btn-secondary" onClick={() => window.open(linkProject14Git, "_blank")}>Git</button>   
+                </div>
+            </div>
+        </div>
+        <div className="project-container">
         <img src="/project2.webp" alt="proyecto2" className="project__image"/>
         <div className="project__container-secondary">
             <img src="/brand-project2.png" alt="Logo de proyecto 2" className="project__brand"/>
@@ -36,14 +50,14 @@ const Projects = () => {
         </div>
         </div>
         <div className="project-container">
-        <img src="/project3.webp" alt="proyecto3" className="project__image"/>
+        <img src="/project3.png" alt="proyecto3" className="project__image"/>
         <div className="project__container-secondary">
             <img src="/brand-project3.png" alt="Logo de proyecto 3" className="project__brand"/>
-            <p className="project__description"><b>Simulador de Noticias: </b>
-            Desarrollé un simulador de noticias utilizando HTML para la estructura del contenido y CSS para personalizar los estilos. Además, incorporé Bootstrap para lograr un diseño responsive y moderno de manera eficiente. Este proyecto incluye una interfaz de usuario atractiva con secciones organizadas, encabezados llamativos y un diseño adaptativo que se ajusta a diferentes dispositivos. Fue mi primer acercamiento a la creación de páginas dinámicas con un diseño profesional.</p>
+            <p className="project__description"><b>Landing Page - Fotógrafo </b>
+            Desarrollé una Landing de un fotografo de españa junto a una agencia de desarrollo web llamada VINK utilizando HTML para la estructura del contenido y CSS para personalizar los estilos. Además, incorporé Bootstrap para lograr un diseño responsive y moderno de manera eficiente. Este proyecto incluye una interfaz de usuario atractiva con secciones organizadas, encabezados llamativos y un diseño adaptativo que se ajusta a diferentes dispositivos.</p>
             <div className="project__buttons-container">
                 <button className="btn-primary" onClick={() => window.open(linkProject3, "_blank")}>Ver proyecto</button>
-                <button className="btn-secondary" onClick={() => window.open(linkProject3Git, "_blank")}>Git</button>   
+                <button className="btn-secondary" onClick={() => window.open()}>Git</button>   
             </div>
         </div>
         </div>

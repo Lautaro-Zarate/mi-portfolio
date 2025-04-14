@@ -94,6 +94,7 @@ h1,h2,h3,h4{
 }
 .btn-secondary{
     border: #78bff0 1px solid;
+    text-decoration: none;
     outline: none;
     padding: 8px 16px;
     border-radius: 8px;
@@ -103,6 +104,10 @@ h1,h2,h3,h4{
     cursor: pointer;
 }
 button:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover{
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
@@ -356,7 +361,7 @@ button:hover{
         gap: 35px;
         justify-content: center;
         height: auto;
-        padding: 20px;
+        padding: 50px;
         margin-bottom: 45px;
     }
     .about-me-container p{
@@ -367,17 +372,19 @@ button:hover{
         display: flex;
         flex-direction: column;
         text-align: justify;
+        align-items: center;
         padding: 15px;
         gap: 25px;
+        width: 100%;
     }
     .project-container{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         gap: 45px;
         margin-bottom: 15px;
-        max-width: 50%;
+        max-width: 60%;
     }
     .project__description{
         font-size: 120%;

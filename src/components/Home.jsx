@@ -12,7 +12,9 @@ const Home = () => {
                     <p>¡Te invito a conocerme y que charlemos!</p>
                     <div className="home-buttons">
                         <button className="btn-primary" onClick={() => window.open(whatsappLink, "_blank")}>Contáctame</button>
-                        <button className="btn-secondary">Descargar CV</button>
+                        <a href="/lautaro-zarate-CV.pdf" download={true} className="btn-secondary"> Descargar CV
+                        {/* <button className="btn-secondary">Descargar CV</button> */}
+                        </a>
                     </div>
                 </div>
                 <div className="image-container">
