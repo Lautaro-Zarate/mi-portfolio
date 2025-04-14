@@ -384,7 +384,7 @@ button:hover{
         align-items: center;
         gap: 45px;
         margin-bottom: 15px;
-        max-width: 60%;
+        max-width: 50%;
     }
     .project__description{
         font-size: 120%;
