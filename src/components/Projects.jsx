@@ -6,19 +6,46 @@ const Projects = () => {
     const linkProject2Git = "https://github.com/Lautaro-Zarate/True-shop"
 
     const linkProject3 = "https://rafasanzfotografo.com/"
-    // const linkProject3Git = "https://github.com/Lautaro-Zarate/Simulador-noticias"
     
     const linkProject4 = "https://certezayderecho.cl/";
     const linkProject14Git = "https://github.com/Lautaro-Zarate/Certeza-Derecho-Estudio"
+    
+    const linkProject5 = "https://matiemos.netlify.app/";
+    const linkProject5Git = "https://github.com/Lautaro-Zarate/matiemos-"
     return (
         <div className="projects" id="projects">
         <h2 className="project-title">Mis proyectos</h2>
         <div className="project-container">
+            <img src="/project5.png" alt="proyecto1" className="project__image"/>
+            <div className="project__container-secondary">
+                <img src="/brand-project5.png" alt="Logo de proyecto 1" className="project__brand"/>
+                <ul className="project__list">
+                    <li>Desarrollo completo de una aplicación web en React.js para recomendar acompañamientos de desayuno/merienda según bebida preferida y clima local del usuario.</li>
+                    <li>Implementación de lógica dinámica con useState, useEffect y useReducer; creación de un custom hook (useWeather) para obtener datos del clima.</li>
+                    <li>Almacenamiento en localStorage, diseño responsive, animaciones con Material UI, y uso de archivos .webp para optimización de imágenes.</li>
+                    <li>Uso de JSON como base de datos local para acompañamientos, con descripciones, imágenes y recetas.</li>
+                    <li>Enfoque en UX/UI: interfaz simple, amigable, con interacción personalizada y visualmente clara.</li>
+                    <li>Publicación progresiva del proyecto en redes, incluyendo prototipos, avances técnicos y versión final funcional.</li>
+                </ul>
+                <div className="project__buttons-container">
+                    <button className="btn-primary" onClick={() => window.open(linkProject5 , "_blank")}>Ver proyecto</button>
+                    <button className="btn-secondary" onClick={() => window.open(linkProject5Git, "_blank")}>Git</button>   
+                </div>
+            </div>
+        </div>
+        <div className="project-container">
             <img src="/project1.webp" alt="proyecto1" className="project__image"/>
             <div className="project__container-secondary">
                 <img src="/brand-project1.png" alt="Logo de proyecto 1" className="project__brand"/>
-                <p className="project__description"><b>Tienda de artefactos para Gimnasios: </b>
-                Desarrollé una tienda de e-commerce especializada en equipos de gimnasio utilizando React para crear una interfaz de usuario dinámica y moderna. La aplicación cuenta con un carrito de compras funcional que permite agregar, eliminar y gestionar productos en tiempo real. También implementé un sistema de filtrado avanzado para facilitar la búsqueda de equipos por categorías y características. El proyecto es completamente responsive y aprovecha los componentes reutilizables de React para optimizar el rendimiento y la escalabilidad. Esta tienda refleja mi capacidad para trabajar con tecnologías modernas y crear aplicaciones web robustas y centradas en el usuario.</p>
+                <ul className="project__list">
+                    <li>Desarrollo de una tienda e-commerce especializada en equipos de gimnasio utilizando React.js.</li>
+                    <li>Creación de una interfaz de usuario dinámica, moderna y completamente responsive.</li>
+                    <li>Implementación de un carrito de compras funcional con funcionalidades para agregar, eliminar y gestionar productos en tiempo real.</li>
+                    <li>Desarrollo de un sistema de filtrado avanzado para facilitar la búsqueda por categorías y características.</li>
+                    <li>Uso de componentes reutilizables de React para optimizar el rendimiento y la escalabilidad.</li>
+                    <li>Enfoque en experiencia de usuario: aplicación robusta, intuitiva y centrada en facilitar la interacción del cliente.</li>
+                </ul>
+
                 <div className="project__buttons-container">
                     <button className="btn-primary" onClick={() => window.open(linkProject1 , "_blank")}>Ver proyecto</button>
                     <button className="btn-secondary" onClick={() => window.open(linkProject1Git, "_blank")}>Git</button>   
@@ -29,8 +56,13 @@ const Projects = () => {
             <img src="/project4.png" alt="proyecto1" className="project__image"/>
             <div className="project__container-secondary">
                 <img src="/brand-project4.svg" alt="Logo de proyecto 1" className="project__brand"/>
-                <p className="project__description"><b>Landing Page para Estudio de Abogados: </b>
-                Desarrollé una landing Page para estudio de abogados de Chile. Para el desarrollo de estas landing pages utilicé HTML y CSS para estructurar y estilizar el contenido, junto con JavaScript para agregar interactividad. Además, implementé Tailwind CSS como framework de estilos para optimizar el diseño responsivo y acelerar el desarrollo con clases utilitarias. Esta Landing refleja mi capacidad para trabajar con tecnologías modernas y crear aplicaciones web robustas y centradas en el usuario.</p>
+                <ul className="project__list">
+                    <li>Desarrollo de una landing page para un estudio de abogados en Chile utilizando HTML y CSS para estructurar y estilizar el contenido.</li>
+                    <li>Uso de JavaScript para agregar interactividad y mejorar la experiencia del usuario.</li>
+                    <li>Implementación de Tailwind CSS como framework de estilos para optimizar el diseño responsivo y acelerar el desarrollo con clases utilitarias.</li>
+                    <li>El proyecto refleja mi capacidad para trabajar con tecnologías modernas y crear aplicaciones web robustas, centradas en el usuario.</li>
+                </ul>
+
                 <div className="project__buttons-container">
                     <button className="btn-primary" onClick={() => window.open(linkProject4 , "_blank")}>Ver proyecto</button>
                     <button className="btn-secondary" onClick={() => window.open(linkProject14Git, "_blank")}>Git</button>   
@@ -41,8 +73,13 @@ const Projects = () => {
         <img src="/project2.webp" alt="proyecto2" className="project__image"/>
         <div className="project__container-secondary">
             <img src="/brand-project2.png" alt="Logo de proyecto 2" className="project__brand"/>
-            <p className="project__description"><b>Tienda de Ropa Vintage: </b>
-                Desarrollé una tienda virtual de ropa vintage utilizando HTML y CSS para la estructura y el diseño, complementados con JavaScript para la lógica interactiva. El proyecto cuenta con un carrito de compras completamente funcional, que permite a los usuarios agregar, eliminar y visualizar productos seleccionados. Además, implementé un sistema de filtrado por categorías y tipos de prendas, brindando una experiencia de navegación intuitiva y personalizada. Este proyecto destaca mi habilidad para crear aplicaciones web interactivas y responsivas, orientadas a mejorar la experiencia del usuario.</p>
+            <ul className="project__list">
+                <li>Desarrollo de una tienda virtual de ropa vintage utilizando HTML y CSS para la estructura y diseño, complementados con JavaScript para la lógica interactiva.</li>
+                <li>Implementación de un carrito de compras funcional que permite agregar, eliminar y visualizar productos seleccionados.</li>
+                <li>Desarrollo de un sistema de filtrado por categorías y tipos de prendas, mejorando la experiencia de navegación.</li>
+                <li>Este proyecto destaca mi habilidad para crear aplicaciones web interactivas y responsivas, enfocadas en mejorar la experiencia del usuario.</li>
+            </ul>
+
             <div className="project__buttons-container">
                 <button className="btn-primary" onClick={() => window.open(linkProject2, "_blank")}>Ver proyecto</button>
                 <button className="btn-secondary" onClick={() => window.open(linkProject2Git, "_blank")}>Git</button>   
@@ -53,8 +90,13 @@ const Projects = () => {
         <img src="/project3.png" alt="proyecto3" className="project__image"/>
         <div className="project__container-secondary">
             <img src="/brand-project3.png" alt="Logo de proyecto 3" className="project__brand"/>
-            <p className="project__description"><b>Landing Page - Fotógrafo </b>
-            Desarrollé una Landing de un fotografo de españa junto a una agencia de desarrollo web llamada VINK utilizando HTML para la estructura del contenido y CSS para personalizar los estilos. Además, incorporé Bootstrap para lograr un diseño responsive y moderno de manera eficiente. Este proyecto incluye una interfaz de usuario atractiva con secciones organizadas, encabezados llamativos y un diseño adaptativo que se ajusta a diferentes dispositivos.</p>
+            <ul className="project__list">
+                <li>Desarrollo de una landing page para un fotógrafo de España junto a la agencia de desarrollo web VINK.</li>
+                <li>Uso de HTML para la estructura del contenido y CSS para personalizar los estilos.</li>
+                <li>Incorporación de Bootstrap para lograr un diseño responsivo y moderno de manera eficiente.</li>
+                <li>El proyecto incluye una interfaz de usuario atractiva con secciones organizadas, encabezados llamativos y un diseño adaptativo para diferentes dispositivos.</li>
+            </ul>
+
             <div className="project__buttons-container">
                 <button className="btn-primary" onClick={() => window.open(linkProject3, "_blank")}>Ver proyecto</button>
                 <button className="btn-secondary" onClick={() => window.open()}>Git</button>   

@@ -117,24 +117,29 @@ button:hover{
 .languages-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #78bff7;
     gap: 25px;
     padding: 10px;
     margin-top: 20px;
     height: 60vh;
 }
+.languages-container h2,h3{
+    color: whitesmoke;
+}
 
 /* SOBRE MI */
 
 .about-me-container{
-    background-color: #78bef090;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    padding: 10px;
+    padding: 10px 20px;
     gap: 10px;
     height: auto;
     width: 100%;
@@ -162,6 +167,16 @@ button:hover{
     font-family: 'Bebas Neue', serif;
     color: #78bff0;
     font-size: 25px;
+}
+.project__list{
+    padding: 10px 20px;
+    text-align: start;
+}
+.project__list li{
+    margin: 10px;
+}
+.project__list li::marker{
+    color: #78bff0;
 }
 .project__brand{
     width: 100%;
@@ -255,12 +270,16 @@ button:hover{
     color: #2659d900;
     -webkit-text-stroke: 1px #0a0a0a;
     --g:conic-gradient(#78bff7 0 0) no-repeat text;
-    background:var(--g) 0,var(--g) 1ch,var(--g) 2ch,var(--g) 3ch,var(--g) 4ch,var(--g) 5ch,var(--g) 6ch;
+    background:var(--g) 0,var(--g) 1ch,var(--g) 2ch,var(--g) 3ch,var(--g) 4ch,var(--g) 5ch,var(--g) 6ch, var(--g) 7ch, var(--g) 8ch;
     background-position-y: 100%;
     animation: l19 1.5s linear infinite alternate;
 }
 .loader:before {
-    content: "Loading";
+    content: "Front-End";
+}
+.icon-languages:hover{
+    transform: scale(1.2);
+    transition-duration: .3s;
 }
 @keyframes l19 {
     0%  {background-size: 1ch 0   ,1ch 0   ,1ch 0   ,1ch 0   ,1ch 0   ,1ch 0   ,1ch 0   }
@@ -316,7 +335,7 @@ button:hover{
         height: 100vh;
     }
     .home-text{
-        margin: 10px 0;
+        margin: 0 10px;
         font-size: 180%;
         display: flex;
         flex-direction: column;
@@ -406,7 +425,7 @@ button:hover{
     }
     .project__brand{
         width: 100%;
-        height: 70px;
+        height: 120px;
         object-fit: contain;
     }
     .project__buttons-container{
