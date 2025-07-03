@@ -12,6 +12,11 @@ const Projects = () => {
     
     const linkProject5 = "https://matiemos.netlify.app/";
     const linkProject5Git = "https://github.com/Lautaro-Zarate/matiemos-"
+    
+    const linkProject6 = "https://crudflix-ts.netlify.app/";
+    const linkProject6Git = "https://github.com/Lautaro-Zarate/CRUD-TS"
+
+    
     return (
         <div className="projects" id="projects">
         <h2 className="project-title">Mis proyectos</h2>
@@ -30,6 +35,24 @@ const Projects = () => {
                 <div className="project__buttons-container">
                     <button className="btn-primary" onClick={() => window.open(linkProject5 , "_blank")}>Ver proyecto</button>
                     <button className="btn-secondary" onClick={() => window.open(linkProject5Git, "_blank")}>Git</button>   
+                </div>
+            </div>
+        </div>
+        <div className="project-container">
+            <img src="/project6.png" alt="proyecto1" className="project__image"/>
+            <div className="project__container-secondary">
+                <img src="/brand-project6.png" alt="Logo de proyecto 6" className="project__brand"/>
+                <ul className="project__list">
+                    <li>Creación, listado, edición y eliminación de películas/series.</li>
+                    <li>Base de datos sincronizada con Firebase, donde cada acción actualiza los datos en tiempo real.</li>
+                    <li>Animaciones de entrada/salida suaves con Framer Motion para mejorar la experiencia visual.</li>
+                    <li>Uso de JSON como base de datos local para acompañamientos, con descripciones, imágenes y recetas.</li>
+                    <li>Validaciones de formulario robustas con mensajes claros usando React Hook Form.</li>
+                    <li>Arquitectura limpia y tipada con TypeScript, reforzando buenas prácticas de desarrollo escalable.</li>
+                </ul>
+                <div className="project__buttons-container">
+                    <button className="btn-primary" onClick={() => window.open(linkProject6 , "_blank")}>Ver proyecto</button>
+                    <button className="btn-secondary" onClick={() => window.open(linkProject6Git, "_blank")}>Git</button>   
                 </div>
             </div>
         </div>

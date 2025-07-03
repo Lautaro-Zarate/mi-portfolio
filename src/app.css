@@ -6,8 +6,20 @@
     box-sizing: border-box;
     font-family: "Montserrat", serif;
 }
+:root{
+    --primary-color: #457222;
+    --secondary-color: #4062bb;
+    --third-color: #174d15;
+    --texts-color-dark: #1c1c1c;
+    --texts-color-light: #ebebeb;
+}
 h1,h2,h3,h4{
-    color: #332e2e;
+    color: var(--texts-color-dark);
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: var(--texts-color-light);
+    font-family: "Bebas Neue" sans-serif;
 }
 
 /* NAVBAR */
@@ -42,7 +54,8 @@ h1,h2,h3,h4{
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-    height: 90vh;
+    padding: 40px 0;
+    background-color: var(--primary-color);
 }
 .home-text{
     margin: 10px 0;
@@ -55,14 +68,15 @@ h1,h2,h3,h4{
     font-family: 'Bebas Neue', serif;
     letter-spacing: 3px;
     font-size: 35px;
-    color: #78bff0;
+    color: var(--texts-color-light);
+    margin-left: 3px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
 }
 .career{
     font-size: 20px;
-    color: #78bff0;
+    color: var(--texts-color-light);
     margin-bottom: 8px;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.75));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
 }
 .image-container{
     display: flex;
@@ -76,6 +90,7 @@ h1,h2,h3,h4{
     border-radius: 50%;
     margin: 10px auto;
     object-fit: cover;
+    box-shadow: 0px 8px 20px 7px rgba(0, 0, 0, 0.75);
 }
 .home-buttons{
     display: flex;
@@ -88,20 +103,23 @@ h1,h2,h3,h4{
     outline: none;
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: #78bff0;
-    color: #fff;
+    background-color: var(--third-color);
+    color: var(--texts-color-light);
     cursor: pointer;
+    font-weight: 400;
+    font-size: 1.04rem;
 }
 .btn-secondary{
-    border: #78bff0 1px solid;
+    border: var(--third-color) 1px solid;
     text-decoration: none;
     outline: none;
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: #fff;
-    color: #78bff0;
+    background-color: var(--texts-color-light);
+    color: var(--third-color);
     font-weight: 400;
     cursor: pointer;
+    font-size: 1.04rem;
 }
 button:hover{
     transform: scale(1.05);
@@ -120,30 +138,36 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #78bff7;
+    background-image: url(/public/wave-bg.svg);
     gap: 25px;
     padding: 10px;
-    margin-top: 20px;
     height: 60vh;
 }
 .languages-container h2,h3{
-    color: whitesmoke;
+    color: var(--texts-color-light);
 }
-
 /* SOBRE MI */
 
 .about-me-container{
-    background-color: whitesmoke;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    padding: 10px 20px;
+    padding: 100px 50px;
     gap: 10px;
     height: auto;
     width: 100%;
     box-shadow: 2px 4px 14px 0px rgba(0, 0, 0, 0.75);
+}
+.about-me-container h2{
+    color: var(--texts-color-light);
+}
+.about-me-container b{
+    color: var(--texts-color-light);
+    font-weight: 500;
+    margin: 0 5px;
 }
 
 /* PROYECTOS */
@@ -153,9 +177,11 @@ button:hover{
     flex-direction: column;
     text-align: justify;
     padding: 15px;
+    background-color: var(--secondary-color);
 }
 .project-title{
     margin-bottom: 10px;
+    color: var(--texts-color-light);
 }
 .project__image{
     width: 100%;
@@ -174,9 +200,10 @@ button:hover{
 }
 .project__list li{
     margin: 10px;
+    color: var(--texts-color-light);
 }
 .project__list li::marker{
-    color: #78bff0;
+    color: var(--texts-color-dark);
 }
 .project__brand{
     width: 100%;
@@ -312,12 +339,12 @@ button:hover{
         cursor: pointer;
     }
     .NavLink:hover{
-        color: #78bff0;
+        color: var(--primary-color);
         font-weight: 700;
         text-decoration: underline;
     }
     .NavLink:focus{
-        color: #78bff0;
+        color: var(--third-color);
         font-weight: 700;
     }
     .brand{
@@ -381,7 +408,6 @@ button:hover{
         justify-content: center;
         height: auto;
         padding: 50px;
-        margin-bottom: 45px;
     }
     .about-me-container p{
         text-align: start;
@@ -415,7 +441,7 @@ button:hover{
         min-width: 90%;
     }
     .project-title{
-        margin-bottom: 30px;
+        margin: 30px;
     }
     .project__image{
         width: 100%;

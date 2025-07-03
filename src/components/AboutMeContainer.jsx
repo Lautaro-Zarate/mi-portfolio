@@ -11,8 +11,9 @@ const AboutMeContainer = () => {
             transition: "all 0.8s ease-out",
         }}>
             <h2>Sobre mí</h2>
-            <p>Hola, soy <b>Lautaro Zarate Rivas</b>, <b>desarrollador web front-end </b>de Salta, Argentina. Tengo 25 años y me especializo en crear soluciones digitales funcionales y atractivas usando tecnologías como HTML, CSS, JavaScript, React.</p>
-            <p>He trabajado en proyectos de <b>e-commerce, landing pages y aplicaciones web</b>, siempre enfocado en mejorar mis habilidades, resolver problemas y colaborar en equipo. Me apasiona transformar ideas en productos reales que generen impacto.</p>
+            <p>Soy un <b>desarrollador Front-End</b> con una fuerte orientación al <b>trabajo en equipo y la comunicación asertiva</b>. Disfruto colaborar con otras personas, compartir ideas y construir soluciones que aporten valor real.</p>
+            <p>Me caracteriza la <b>capacidad para adaptarme a diferentes contextos, aprender nuevas tecnologías y resolver problemas de manera eficiente.</b></p>
+            <p>Busco crear aplicaciones web que ofrezcan experiencias claras y accesibles, siempre priorizando la calidad del código y el impacto en los usuarios.</p>
         </div>
     )
 }

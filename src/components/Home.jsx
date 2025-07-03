@@ -12,12 +12,12 @@ const Home = () => {
                     <p>¡Te invito a conocerme y que charlemos!</p>
                     <div className="home-buttons">
                         <button className="btn-primary" onClick={() => window.open(whatsappLink, "_blank")}>Contáctame</button>
-                        <a href="/lautaro-rivas-cv.pdf" download={true} className="btn-secondary"> Descargar CV
+                        <a href="/cv-lautaro-rivas.pdf" download={true} className="btn-secondary"> Descargar CV
                         </a>
                     </div>
                 </div>
                 <div className="image-container">
-                    <img src="/Yo.jpeg" alt="Foto de mi apariencia" className="me-image"/>
+                    <img src="./public/Yo.jpeg" alt="Foto de mi apariencia" className="me-image"/>
                 </div>
             </section>
         </div>

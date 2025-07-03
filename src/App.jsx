@@ -16,6 +16,7 @@ function App() {
   setTimeout(() => {
     setLoading(false)
   }, 2500)
+  
   return (
     loading ? <Loader/> : 
     <BrowserRouter>
