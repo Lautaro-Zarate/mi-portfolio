@@ -8,7 +8,8 @@
 }
 :root{
     --primary-color: #457222;
-    --secondary-color: #4062bb;
+    /* --secondary-color: #1F3038; */
+    --secondary-color: #A6CE39;
     --third-color: #174d15;
     --texts-color-dark: #1c1c1c;
     --texts-color-light: #ebebeb;
@@ -55,7 +56,7 @@ body{
     flex-direction: column;
     margin-top: 70px;
     padding: 40px 0;
-    background-color: var(--primary-color);
+    background: linear-gradient(var(--primary-color), var(--secondary-color));;
 }
 .home-text{
     margin: 10px 0;
@@ -63,6 +64,9 @@ body{
     flex-direction: column;
     gap: 5px;
     text-align: center;
+}
+.home-text p{
+    color: var(--texts-color-dark);
 }
 .name{
     font-family: 'Bebas Neue', serif;
@@ -74,7 +78,7 @@ body{
 }
 .career{
     font-size: 20px;
-    color: var(--texts-color-light);
+    color: var(--texts-color-light) !important;
     margin-bottom: 8px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.75));
 }
@@ -138,7 +142,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(/public/wave-bg.svg);
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
     gap: 25px;
     padding: 10px;
     height: 60vh;
@@ -149,23 +153,27 @@ button:hover{
 /* SOBRE MI */
 
 .about-me-container{
-    background-color: var(--primary-color);
+    background: linear-gradient(var(--primary-color), var(--secondary-color));;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    padding: 100px 50px;
+    padding: 100px 30px;
     gap: 10px;
     height: auto;
     width: 100%;
-    box-shadow: 2px 4px 14px 0px rgba(0, 0, 0, 0.75);
 }
 .about-me-container h2{
-    color: var(--texts-color-light);
+    color: var(--texts-color-dark);
+}
+.about-me-container p{
+    font-size: 1.1rem;
+    color: var(--texts-color-dark);
+    font-weight: 500;
 }
 .about-me-container b{
-    color: var(--texts-color-light);
+    color: var(--texts-color-light) !important;
     font-weight: 500;
     margin: 0 5px;
 }
@@ -177,17 +185,19 @@ button:hover{
     flex-direction: column;
     text-align: justify;
     padding: 15px;
-    background-color: var(--secondary-color);
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
 }
 .project-title{
-    margin-bottom: 10px;
+    margin: 20px;
     color: var(--texts-color-light);
+    text-align: center;
 }
 .project__image{
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    margin: 10px 0;
 }
 .project__title{
     font-family: 'Bebas Neue', serif;
@@ -220,6 +230,7 @@ button:hover{
 /* CERTIFICADOS */
 
 .certificate-container{
+    background: linear-gradient(var(--primary-color),var(--secondary-color));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,38 +238,45 @@ button:hover{
     gap: 8px;
     padding: 10px;
 }
-.certificate-container-secondary{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.certificate-container h2{
+    margin: 20px;
+    color: var(--texts-color-light);
+    font-size: 2rem;
 }
-.span-certificate{
-    font-family: 'Bebas Neue', serif;
-    color: #78bff0;
-    font-size: 20px;
+.certicates-container-secondary{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin: 10px 0;
 }
 .certificate-image{
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
 /* CONTACTOS */
 
 .contact-container-primary{
+    background: linear-gradient(var(--secondary-color),var(--primary-color));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+.contact-container-primary h2,p{
+    color: var(--texts-color-light);
+    text-align: center;
 }
 .contact-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    margin: 10px;
 }
 
 /* FOOTER */
@@ -279,6 +297,9 @@ button:hover{
     margin-bottom: 5px;
     text-align: center;
 }
+.footer-text p{
+    color: var(--texts-color-dark);
+}
 
 /* LOADER */
 
@@ -296,7 +317,7 @@ button:hover{
     text-transform: uppercase;
     color: #2659d900;
     -webkit-text-stroke: 1px #0a0a0a;
-    --g:conic-gradient(#78bff7 0 0) no-repeat text;
+    --g:conic-gradient(var(--primary-color) 0 0) no-repeat text;
     background:var(--g) 0,var(--g) 1ch,var(--g) 2ch,var(--g) 3ch,var(--g) 4ch,var(--g) 5ch,var(--g) 6ch, var(--g) 7ch, var(--g) 8ch;
     background-position-y: 100%;
     animation: l19 1.5s linear infinite alternate;
@@ -314,6 +335,12 @@ button:hover{
     50% {background-size: 1ch 100%,1ch 100%,1ch 50% ,1ch 0   ,1ch 50% ,1ch 100%,1ch 100%}
     75% {background-size: 1ch 100%,1ch 100%,1ch 100%,1ch 50% ,1ch 100%,1ch 100%,1ch 100%}
     to  {background-size: 1ch 100%,1ch 100%,1ch 100%,1ch 100%,1ch 100%,1ch 100%,1ch 100%}
+}
+img{
+    transition: transform 0.4s ease; /* Suavidad del hover */
+}
+img:hover{
+      transform: scale(1.05); /* Zoom leve del 5% */
 }
 @media (min-width: 1024px) {
     h1,h2,h3,h4{
@@ -471,20 +498,9 @@ button:hover{
         gap: 8px;
         padding: 10px;
     }
-    .certificate-container-secondary{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        font-size: 120%;
-        max-width: 80%;
-    }
-    .span-certificate{
-        font-size: 100%;
-    }
-    .certificate-image{
-        width: 100%;
-        height: 550px;
-        object-fit: contain;
+    .certicates-container-secondary{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 40px;
     }
 
     /* CONTACTOS */

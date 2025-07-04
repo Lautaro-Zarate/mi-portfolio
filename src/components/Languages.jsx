@@ -1,12 +1,6 @@
-import { useInView } from "react-intersection-observer";
 const Languages = () => {
-    const {ref, inView}= useInView({
-        threshold: 0.3,
-    });
     return(
-        <div id="languages" className="languages-container" 
-        ref={ref} 
-        style={{opacity: inView ? 1 : 0, transform: inView ? 'translateY(0)' : 'translateY(50px)', transition: 'all 1s'}}>
+        <div id="languages" className="languages-container">
             <h2>Lenguajes y herramientas que manejo:</h2>
             <ul>
                 <img src="/html.webp" alt="HTML" className="icon-languages"/>
