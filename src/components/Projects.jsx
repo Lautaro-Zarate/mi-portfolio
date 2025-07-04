@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Projects = () => {
     const linkProject1 = "https://gym-shop-zarate-rivas.vercel.app/";
     const linkProject1Git = "https://github.com/Lautaro-Zarate/Gym-shop-Zarate"
@@ -16,11 +18,20 @@ const Projects = () => {
     const linkProject6 = "https://crudflix-ts.netlify.app/";
     const linkProject6Git = "https://github.com/Lautaro-Zarate/CRUD-TS"
 
-    
+    const listVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+    };
     return (
         <div className="projects" id="projects">
         <h2 className="project-title">Mis proyectos</h2>
-        <div className="project-container">
+        <motion.div className="project-container"
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}
+        >
             <img src="/project5.png" alt="proyecto1" className="project__image"/>
             <div className="project__container-secondary">
                 <img src="/brand-project5.png" alt="Logo de proyecto 1" className="project__brand"/>
@@ -37,8 +48,13 @@ const Projects = () => {
                     <button className="btn-secondary" onClick={() => window.open(linkProject5Git, "_blank")}>Git</button>   
                 </div>
             </div>
-        </div>
-        <div className="project-container">
+        </motion.div>
+        <motion.div className="project-container"
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}>
             <img src="/project6.png" alt="proyecto1" className="project__image"/>
             <div className="project__container-secondary">
                 <img src="/brand-project6.png" alt="Logo de proyecto 6" className="project__brand"/>
@@ -55,8 +71,13 @@ const Projects = () => {
                     <button className="btn-secondary" onClick={() => window.open(linkProject6Git, "_blank")}>Git</button>   
                 </div>
             </div>
-        </div>
-        <div className="project-container">
+        </motion.div>
+        <motion.div className="project-container"
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}>
             <img src="/project1.webp" alt="proyecto1" className="project__image"/>
             <div className="project__container-secondary">
                 <img src="/brand-project1.png" alt="Logo de proyecto 1" className="project__brand"/>
@@ -74,8 +95,13 @@ const Projects = () => {
                     <button className="btn-secondary" onClick={() => window.open(linkProject1Git, "_blank")}>Git</button>   
                 </div>
             </div>
-        </div>
-        <div className="project-container">
+        </motion.div>
+        <motion.div className="project-container"
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}>
             <img src="/project4.png" alt="proyecto1" className="project__image"/>
             <div className="project__container-secondary">
                 <img src="/brand-project4.svg" alt="Logo de proyecto 1" className="project__brand"/>
@@ -91,8 +117,13 @@ const Projects = () => {
                     <button className="btn-secondary" onClick={() => window.open(linkProject14Git, "_blank")}>Git</button>   
                 </div>
             </div>
-        </div>
-        <div className="project-container">
+        </motion.div>
+        <motion.div className="project-container"
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}>
         <img src="/project2.webp" alt="proyecto2" className="project__image"/>
         <div className="project__container-secondary">
             <img src="/brand-project2.png" alt="Logo de proyecto 2" className="project__brand"/>
@@ -108,8 +139,13 @@ const Projects = () => {
                 <button className="btn-secondary" onClick={() => window.open(linkProject2Git, "_blank")}>Git</button>   
             </div>
         </div>
-        </div>
-        <div className="project-container">
+        </motion.div>
+        <motion.div className="project-container"
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}>
         <img src="/project3.png" alt="proyecto3" className="project__image"/>
         <div className="project__container-secondary">
             <img src="/brand-project3.png" alt="Logo de proyecto 3" className="project__brand"/>
@@ -125,7 +161,7 @@ const Projects = () => {
                 <button className="btn-secondary" onClick={() => window.open()}>Git</button>   
             </div>
         </div>
-        </div>
+        </motion.div>
         </div>
     )
 }

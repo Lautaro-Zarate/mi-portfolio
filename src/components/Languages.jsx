@@ -1,8 +1,21 @@
+import { motion } from "framer-motion";
 const Languages = () => {
+
+    const listVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+    };
+
     return(
         <div id="languages" className="languages-container">
             <h2>Lenguajes y herramientas que manejo:</h2>
-            <ul>
+            <motion.ul
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.9 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}
+            >
                 <img src="/html.webp" alt="HTML" className="icon-languages"/>
                 <img src="/css.webp" alt="CSS" className="icon-languages"/>
                 <img src="/js.webp" alt="JAVASCRIPT" className="icon-languages"/>
@@ -17,12 +30,18 @@ const Languages = () => {
                 <img src="/figma.webp" alt="FIGMA" className="icon-languages"/>
                 <img src="/materialui.webp" alt="MATERIAL-UI" className="icon-languages"/>
                 <img src="/redux.webp" alt="REDUX" className="icon-languages"/>
-            </ul>
+            </motion.ul>
             <h3>Lenguajes en proceso de aprendizaje: </h3>
-            <ul>
+            <motion.ul
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.9 }}
+            transition={{ duration: 0.8, ease: "easeOut"}}
+            >
                 <img src="/nodejs.webp" alt="NODE-JS" className="icon-languages"/>
                 <img src="/nextjs.webp" alt="NEXT-JS" className="icon-languages"/>
-            </ul>
+            </motion.ul>
         </div>
     )
 }
