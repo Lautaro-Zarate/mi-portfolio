@@ -17,7 +17,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="image-container">
-                    <img src="./public/Yo.jpeg" alt="Foto de mi apariencia" className="me-image"/>
+                    <img src="/Yo.jpeg" alt="Foto de mi apariencia" className="me-image"/>
                 </div>
             </section>
         </div>
