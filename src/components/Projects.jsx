@@ -23,7 +23,7 @@ const Projects = () => {
     visible: { opacity: 1, y: 0 },
     };
     return (
-        <div className="projects" id="projects">
+        <section className="projects" id="projects">
         <h2 className="project-title">Mis proyectos</h2>
         <motion.div className="project-container"
             variants={listVariants}
@@ -162,7 +162,7 @@ const Projects = () => {
             </div>
         </div>
         </motion.div>
-        </div>
+        </section>
     )
 }
 export default Projects;

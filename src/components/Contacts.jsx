@@ -11,7 +11,7 @@ const Contacts = ()=> {
 
     
     return(
-        <div id="contact" className="contact-container-primary">
+        <section id="contact" className="contact-container-primary">
             <h2>Contacto</h2>
             <p>Aquí dejo todos mis contactos, <span>¡Será un placer hablar contigo!</span></p>
             <div className="contact-container">
@@ -30,7 +30,7 @@ const Contacts = ()=> {
                 <img src="/github.png" alt="Github" className="contact__icon"/>
                 <button className="btn-primary" onClick={() => window.open(linkGitHub, "_blank")}>Git Hub</button>
             </div>
-        </div>
+        </section>
     )
 }
 export default Contacts;

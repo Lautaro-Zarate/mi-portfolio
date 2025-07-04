@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import Brand from "./Brand";
 const Navbar = () => {
     return(
-        <div>
+        <header>
             <nav className="navbar-container">
                 <Link to={"home"} smooth={true} ><Brand/></Link>
                 <div className="nav-links">
@@ -13,7 +13,7 @@ const Navbar = () => {
                     <Link to={"contact"} smooth={true} className={"NavLink"}>Contacto</Link>
                 </div>
             </nav>
-        </div>
+        </header>
     )
 }
 export default Navbar;

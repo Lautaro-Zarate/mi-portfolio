@@ -7,7 +7,7 @@ const Languages = () => {
     };
 
     return(
-        <div id="languages" className="languages-container">
+        <section id="languages" className="languages-container">
             <h2>Lenguajes y herramientas que manejo:</h2>
             <motion.ul
             variants={listVariants}
@@ -42,7 +42,7 @@ const Languages = () => {
                 <img src="/nodejs.webp" alt="NODE-JS" className="icon-languages"/>
                 <img src="/nextjs.webp" alt="NEXT-JS" className="icon-languages"/>
             </motion.ul>
-        </div>
+        </section>
     )
 }
 export default Languages;

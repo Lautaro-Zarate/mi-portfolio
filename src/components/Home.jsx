@@ -5,7 +5,7 @@ const Home = () => {
         const message = "¡Hola Lautaro! he visto tu portfolio y me interesaría..."; //MENSAJE QUE SE ENVIA 
         const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`; // LINK DE WHATSAPP
     return(
-        <div>
+        <main>
             <section id="home" className="home-container">
                 <motion.div 
                 className="home-text"
@@ -31,7 +31,7 @@ const Home = () => {
                     <img src="/Yo.jpeg" alt="Foto de mi apariencia" className="me-image"/>
                 </motion.div>
             </section>
-        </div>
+        </main>
     )
 }
 export default Home;
